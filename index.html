@@ -4,37 +4,87 @@
     <meta charset="utf-8">
 	<title>Practica de Blog estatico</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1">
-    <link rel="stylesheet"  href="index.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+   <link rel="stylesheet"  href="index.css">
+  <!--  <link rel="stylesheet" type="text/css" href="style.css">-->
 
 </head>
 <body>
 
-
+<!--
 <header>
-		<!--<input type="checkbox" id="btn-menu" name="">
-		<label for="btn-menu"><img src="img/btn-r.png" width="50px"></label>-->
+		<input type="checkbox" id="btn-menu" name="">
+		<label for="btn-menu"><img src="img/btn-r.png" width="50px"></label>
 		<nav>
 			<ul>
+			    <a href="index.html">Inicio</a>
+				<a href="formulario.html">Nuevo post</a>
+				<a href="">Comentarios</a>
 				<li><a href="index.html">Inicio</a></li>
 				<li><a href="formulario.html">Nuevo post</a></li>
 				<li><a href="">Comentarios</a></li>
-				<!--<li><a href=""></a></li>
-				<li><a href=""></a></li>-->
+				<li><a href=""></a></li>
+				<li><a href=""></a></li>
 			</ul>
 		</nav>
-	</header>
-
-<header>
+</header>
+-->
 	<h2 align="center">En este post se resuelven dudas </h2>	
 
 	<div class="row"> 
-		<img class="imagen" src="images/3.jpg" width="1000" height="">
+		<img class="imagen" src="images/3.jpg" style=" width:100%; height:200px">
 	</div>
+	<section>
+		<header>
+	<section id="menu">
+		<ul>
+			<a href="#">inicio</a>
+			<a href="#">Nuevo post</a>
+			<a href="#">Comentarios</a>
+			<a href="#">Sobre nosotros</a>
+		</ul>
+	</section>
 </header>
+	</section>
+<section>
+	<div>
+        <h3> <a href="formulario.html"> Agrega un nuevo post </a></h3>
+    </div>
 
+    <div style="max-width:100%; display:absolute; " id="contenedor">
+
+    <div style="margin-left:5px; background-color:orange; width:40%; " id="a">
+    	<img src="images/ej1.jpg" style="width:90%; padding:20px">
+    	<p style="width:40%; padding: 2%  " >Nuevas aventuras de las ordas de mordor </p>
+    	<img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAFoArAMBIgACEQEDEQH/xAAaAAEAAwEBAQAAAAAAAAAAAAAAAwQFAgcB/8QAKRAAAgIBAwMDBAMBAAAAAAAAAAECAxEEEiETMVEFIkFigZGhMmFxFP/EABgBAQADAQAAAAAAAAAAAAAAAAABAgME/8QAGhEBAAIDAQAAAAAAAAAAAAAAAAECITEyEf/aAAwDAQACEQMRAD8A9cABZmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAV9b1GqoV2yqU7NspwS3JYeMZz8pFgh1UJzrXTSc4zjLDeO0k3+skW0vTqFGpa22uD0913Smswtsdf8AH4bW3PPGP3g7qd++nqai1z6zrnF7drxGT+Ip84RPp4XaeFinCHTXNdcJOTXlcpcePH+HyNNydO5V4hY7JS3PLbUs8Y+op42m0Z0tgLsDRzAAAAAAAAAAAAAAAAAAAAACp6tbKnQWyhucm4wSj390lHj++StpvVNNFVaamUrnGqCTzzKTXEcP5wsvxh5NOcIzSU4qSTUkn5Tyn+UR2UQtjttqqnHjiUc/OQMvWeswlo7P+N7bJUQsrsnjanPaks9ty3x/K+8FHrFa1F87L+rbB9GFcJYVjWFJpdsJp8/Vzxg2+hDCXRqws49q4z3/ACcQ0kIWynjO7Ptb9qzjOF9kQnDK0vqF9vqkVHUVrTTc57ZSUnKKlsikuflcY8c9zdRxGqCk5dOCk3ltR7vydiEAAJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf/Z" style="margin-left:51.5%; margin-top:-100% ">
+    </div>
+     
+     
+    </div>
+</section>
+
+<section id="Agregar">
+	<center>
+	<h2>A gregar un nuevo comentario</h2>
+	</center>
+	<form style="margin-left:40%">
+		<div class="form_row">
+			<label>Nombre</label><br />
+			<input type="text" name="nombre" placeholder="Ejemplo: Luis">
+		</div>
+		<div class="form_row">
+			<label>E-mail</label><br />
+			<input type="text" name="email" placeholder="Ejemplo@gmail.com">
+		</div>
+		<div>
+			<label>Comentario</label><br />
+			<textarea  name="comentario"> </textarea>
+		</div>
+		<button class="button-success pure-button">Enviar Comentario</button>
+	</form>
+	
+	
+</section>	
 <main>
-<h3> <a href="formulario.html"> Agrega un nuevo post </a></h3>
 <section id="Comentarios">
 	<li>
 		<div class="avatar">
@@ -76,28 +126,9 @@
 
 </section>
 </main>
-
-<section id="Agregar">
-	<h2>A gregar un nuevo comentario</h2>
-	<form>
-		<div class="form_row">
-			<label>Nombre</label><br />
-			<input type="text" name="nombre" placeholder="Ejemplo: Luis">
-		</div>
-		<div class="form_row">
-			<label>E-mail</label><br />
-			<input type="text" name="email" placeholder="Ejemplo@gmail.com">
-		</div>
-		<div>
-			<label>Comentario</label><br />
-			<textarea  name="comentario"> </textarea>
-		</div>
-		<button class="button-success pure-button">Enviar Comentario</button>
-	</form>
-	<footer>
+<footer>
 		<p align="center"> todos los derechos reservados copy right</p>
-	</footer>
-</section>	
+</footer>
 
 </body>
 </html>
